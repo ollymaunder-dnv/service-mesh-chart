@@ -73,6 +73,9 @@ serviceAccount:
   # Indicates whether pods running as this service
   # account should have an API token automatically mounted.
   automountToken: false
+  # If the service should run under a workload identity, set the client id of 
+  # the Azure Managed Identity here. 
+  workloadIdentityClientId:
 
 gateway:
   # map virtual service to a gateway expose this service
